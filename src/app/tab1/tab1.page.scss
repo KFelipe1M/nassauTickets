@@ -1,0 +1,143 @@
+.totem {
+min-height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 25px;
+}
+
+.cabecalho {
+text-align: center;
+margin-bottom: 35px;
+}
+
+.cabecalho h1 {
+font-size: 32px;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+.cabecalho p {
+font-size: 19px;
+color: #666;
+margin: 0;
+}
+
+.botoes-senhas {
+width: 100%;
+max-width: 650px;
+display: flex;
+flex-direction: column;
+gap: 22px;
+}
+
+.botao-senha {
+--border-radius: 18px;
+--box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+
+height: 130px;
+margin: 0;
+
+--padding-start: 20px;
+--padding-end: 20px;
+}
+
+.conteudo-botao {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 5px;
+}
+
+.titulo {
+font-size: 24px;
+font-weight: 700;
+}
+
+.sigla {
+font-size: 34px;
+font-weight: 800;
+}
+
+/* Senha Prioritária */
+.prioridade {
+--background: #d62828;
+--background-hover: #b71c1c;
+--color: white;
+}
+
+/* Senha Geral */
+.geral {
+--background: #1976d2;
+--background-hover: #125aa0;
+--color: white;
+}
+
+/* Retirada de Exames */
+.exames {
+--background: #2e7d32;
+--background-hover: #1b5e20;
+--color: white;
+}
+
+/* Efeito ao tocar no botão */
+.botao-senha:active {
+transform: scale(0.98);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+
+.totem {
+padding: 25px 15px;
+}
+
+.cabecalho h1 {
+font-size: 25px;
+}
+
+.cabecalho p {
+font-size: 16px;
+}
+
+.botao-senha {
+height: 110px;
+}
+
+.titulo {
+font-size: 19px;
+}
+
+.sigla {
+font-size: 29px;
+}
+}
+
+.perfil {
+--padding-start: 0;
+--padding-end: 0;
+margin-right: 8px;
+}
+
+.avatar {
+width: 42px;
+height: 42px;
+
+border-radius: 50%;
+
+background: white;
+color: #1976d2;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-size: 24px;
+}
+
+.avatar ion-icon {
+font-size: 25px;
+}
+
